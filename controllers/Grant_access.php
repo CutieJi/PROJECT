@@ -13,7 +13,10 @@ class Grant_access extends CI_Controller
 
         $data['users'] =  $this->Grant_access_model->rows();
 
+        $this->load->view('templates/header');
+        $this->load->view('templates/nav');
         $this->load->view('grant_access/index', $data);
+        $this->load->view('templates/footer',);
     }
 
     public function add()
@@ -43,7 +46,10 @@ class Grant_access extends CI_Controller
             }
         }
 
+        $this->load->view('templates/header');
+        $this->load->view('templates/nav');
         $this->load->view('grant_access/add');
+        $this->load->view('templates/footer',);
     }
 
     public function update($id)
@@ -75,7 +81,10 @@ class Grant_access extends CI_Controller
         }
         $data['user'] = $this->Grant_access_model->row($id);
 
+        $this->load->view('templates/header');
+        $this->load->view('templates/nav');
         $this->load->view('grant_access/edit', $data);
+        $this->load->view('templates/footer',);
     }
 
     public function delete($id)
