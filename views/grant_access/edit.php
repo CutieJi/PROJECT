@@ -1,96 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <div>
-        <!-- header -->
-        <div>
-            <div>
-                
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <h2>School of ABC</h2>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-        </div>
-
-
-        <!-- navigation -->
-
-
-        <div>
-            <div>
-                <a href="<?= site_url('Dashboard') ?>">Home</a>
-                <a href="<?= site_url('Grant_access') ?>">Grant Access</a>
-                <a href="">Employees</a>
-
-            </div>
-        </div>
-
 
         <!-- content -->
-         <div>
-            this a grant access page
-         </div>
+      
 
 
          <div style="margin: 20px;">
-            <h3>update page</h3>
+            <h3>Update User's Credential</h3>
          </div>
+<div class="container px-0 px-lg-5">
 
 
+    <div class="card bm-5 px-0 px-lg-5">
 
-         <div style="margin: 20px;">
+
+         <div class="m-4">
             <form action="<?= site_url('Grant_access/update/'.$user->id) ?>" method="post">
-                <?php 
-                if (validation_errors()) {
-                    echo validation_errors();
-                }
-                
-                ?>
-            <div>
-                <label for="">Employee No.*</label>
-                <input type="text" name="users_id" id="" value="<?= $user->users_id?>">
+            <?php if (validation_errors()) { ?>
+                        <span class="text-danger"> <?= validation_errors();?></span>
+                <?php }   ?>
+            
+
+            <div class="form-group">
+                <label for="users_id">Employee No. <span class="text-danger">*</span></label>
+                <input type="text" name="users_id" value="<?= $user->users_id?>" class="form-control" id="exampleFormControlInput1" placeholder="ABC-0000-0000">
             </div>
 
-            <div>
-                <label for="">Department*</label>
-                <select name="department" id="">
-                <option value="<?= $user->department?>"><?= $user->department?></option>
-                <option value="IT">IT</option>
-                <option value="Finance">Finance</option>
-                <option value="Registrar">Registrar</option>
+
+          
+
+            <div class="form-group">
+                <label for="department">Department <span class="text-danger">*</span></label>
+                <select name="department" class="form-control" id="department">
+                    <option value="<?= $user->department?>">Selected value: <?= $user->department?></option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Registrar">Registrar</option>
                 </select>
             </div>
 
             <div>
-                <input type="submit" value="Update">
+                <input class="btn btn-primary" type="submit" value="Update">
             </div>
             </form>
         </div>
-
-
     </div>
-
-</body>
-
-</html>
+</div>
