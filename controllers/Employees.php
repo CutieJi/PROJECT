@@ -29,7 +29,7 @@ class Employees extends CI_Controller
         $this->form_validation->set_rules('office_code','Employee No.','trim|required');
         $this->form_validation->set_rules('province_or_city','Live','trim|required');
         $this->form_validation->set_rules('region','Region','trim|required');
-        $this->form_validation->set_rules('brgy','Barangy','trim|required');
+        $this->form_validation->set_rules('brgy','Baranggy','trim|required');
         $this->form_validation->set_rules('contact','Contact No.','trim|required');
 
         if ($this->form_validation->run()) {
@@ -78,7 +78,7 @@ class Employees extends CI_Controller
         $this->form_validation->set_rules('office_code','Employee No.','trim|required');
         $this->form_validation->set_rules('province_or_city','Live','trim|required');
         $this->form_validation->set_rules('region','Region','trim|required');
-        $this->form_validation->set_rules('brgy','Barangy','trim|required');
+        $this->form_validation->set_rules('brgy','Baranggy','trim|required');
         $this->form_validation->set_rules('contact','Contact No.','trim|required');
 
         if ($this->form_validation->run()) {

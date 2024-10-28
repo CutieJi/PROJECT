@@ -29,12 +29,12 @@ class Login extends CI_Controller
             $result = $this->Login_model->login($data);
 
             if ($result) {
-                //$this->session->set_flashdata('msg', 'Successfully created a User');
+                $this->session->set_userdata('usr_info', $result);
                 redirect('dashboard');
             }
             else
             {
-                //$this->session->set_flashdata('errmsg', 'You have failed to create a user');
+                // $this->session->set_flashdata('errmsg', 'You have failed to create a user');
                 //redirect('Login/login');
             }
         }
@@ -46,5 +46,11 @@ class Login extends CI_Controller
     public function update($id)
     {
        
+    }
+
+    public function logout()
+    {
+       $this->session->sess_destroy();
+       redirect('login/login');
     }
 }
