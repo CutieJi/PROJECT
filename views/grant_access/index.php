@@ -18,7 +18,7 @@
                 }
             ?>
             <table class="table">
-                <thead>
+                <thead class="table-dark bg-primary">
                     <tr>
                         <th>Users ID</th>
                         <th>Department</th>

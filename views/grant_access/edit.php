@@ -21,7 +21,7 @@
 
             <div class="form-group">
                 <label for="users_id">Users ID<span class="text-danger">*</span></label>
-                <input type="text" name="users_id" value="<?= $user->users_id?>" class="form-control" id="exampleFormControlInput1" placeholder="ABC-0000-0000">
+                <input type="text" name="users_id" value="<?= $user->users_id?>" class="form-control" id="exampleFormControlInput1" placeholder="abc-0000-0000">
             </div>
 
 
