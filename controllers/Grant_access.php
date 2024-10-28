@@ -21,7 +21,7 @@ class Grant_access extends CI_Controller
 
     public function add()
     {
-        $this->form_validation->set_rules('users_id','Employee No.','trim|required');
+        $this->form_validation->set_rules('users_id','Users ID','trim|required');
         $this->form_validation->set_rules('department','Department.','trim|required');
 
         if ($this->form_validation->run()) {
@@ -54,7 +54,7 @@ class Grant_access extends CI_Controller
 
     public function update($id)
     {
-        $this->form_validation->set_rules('users_id','Employee No.','trim|required');
+        $this->form_validation->set_rules('users_id','Users ID','trim|required');
         $this->form_validation->set_rules('department','Department.','trim|required');
 
         if ($this->form_validation->run()) {

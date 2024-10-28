@@ -5,32 +5,46 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('Login_model');
     }
 
     public function index()
     {
-
         $this->load->view('login/index');
+        $this->load->view('templates/footer');
     }
 
-    public function signin()
+    public function login()
     {
-        {
+        $this->form_validation->set_rules('users_id','Users ID','trim|required');
+        $this->form_validation->set_rules('pword','Password.','trim|required');
+
+        if ($this->form_validation->run()) {
+            
             $data = array(
-                'users_id'      =>$this->input->post('users_id'),
-                'pword'         =>$this->input->post('password')
+                'users_id'      => $this->input->post('users_id'),
+                'pword'         => hash('sha256', $this->input->post('pword')),
+                'is_deleted'    => 0
             );
-            $result = $this->Login_model->signin($data);
+            $result = $this->Login_model->login($data);
 
             if ($result) {
-                $this->session->set_flashdata('msg', 'The password you ve entered is incorrect');
+                //$this->session->set_flashdata('msg', 'Successfully created a User');
+                redirect('dashboard');
             }
             else
             {
-                $this->session->set_flashdata('errmsg', 'The password you ve entered is incorrect');
+                //$this->session->set_flashdata('errmsg', 'You have failed to create a user');
+                //redirect('Login/login');
             }
         }
-
+        
         $this->load->view('login/index');
+        $this->load->view('templates/footer');
+    }
+
+    public function update($id)
+    {
+       
     }
 }
