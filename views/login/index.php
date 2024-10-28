@@ -58,7 +58,7 @@
                         <?php }   ?>
                             <div class="card-title">
                                 <label for="users_id">Users ID</label>
-                                <input class="form-control" name="users_id" type="text" placeholder="ABC-0000-0000">
+                                <input class="form-control" name="users_id" type="text" placeholder="abc-0000-0000">
                             </div>
 
                             <div class="card-title">

@@ -21,17 +21,17 @@
 
             <div class="form-group">
                 <label for="lname">Employee No. <span class="text-danger">*</span></label>
-                <input type="text" name="lname" value="<?= $user->lname?>" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                <input type="text" name="lname" value="<?= $user->lname?>" class="form-control" id="exampleFormControlInput1" placeholder="last name">
             </div>
 
             <div class="form-group">
                 <label for="fname">First Name<span class="text-danger">*</span></label>
-                <input type="text" name="fname" value="<?= $user->fname?>" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                <input type="text" name="fname" value="<?= $user->fname?>" class="form-control" id="exampleFormControlInput1" placeholder="first name">
             </div>
 
             <div class="form-group">
                 <label for="em_id">Employee No. <span class="text-danger">*</span></label>
-                <input type="text" name="em_id" value="<?= $user->em_id?>" class="form-control" id="exampleFormControlInput1" placeholder="ABC-0000-0000">
+                <input type="text" name="em_id" value="<?= $user->em_id?>" class="form-control" id="exampleFormControlInput1" placeholder="abc-0000-0000">
             </div>
 
             <div class="form-group">
@@ -51,27 +51,27 @@
 
             <div class="form-group">
                 <label for="office_code">Office No. <span class="text-danger">*</span></label>
-                <input type="text" name="office_code" value="<?= $user->office_code?>" class="form-control" id="exampleFormControlInput1" placeholder="0000-0000-ICP">
+                <input type="text" name="office_code" value="<?= $user->office_code?>" class="form-control" id="exampleFormControlInput1" placeholder="0000-0000-icp">
             </div>
 
             <div class="form-group">
                 <label for="province_or_city">Live<span class="text-danger">*</span></label>
-                <input type="text" name="province_or_city" value="<?= $user->province_or_city?>" class="form-control" id="exampleFormControlInput1" placeholder="Province or City">
+                <input type="text" name="province_or_city" value="<?= $user->province_or_city?>" class="form-control" id="exampleFormControlInput1" placeholder="province or city">
             </div>
 
             <div class="form-group">
                 <label for="region">Region<span class="text-danger">*</span></label>
-                <input type="text" name="region" value="<?= $user->region?>" class="form-control" id="exampleFormControlInput1" placeholder="Region">
+                <input type="text" name="region" value="<?= $user->region?>" class="form-control" id="exampleFormControlInput1" placeholder="region">
             </div>
 
             <div class="form-group">
-                <label for="brgy">Barangy<span class="text-danger">*</span></label>
-                <input type="text" name="brgy" value="<?= $user->brgy?>" class="form-control" id="exampleFormControlInput1" placeholder="Barangy">
+                <label for="brgy">Baranggy<span class="text-danger">*</span></label>
+                <input type="text" name="brgy" value="<?= $user->brgy?>" class="form-control" id="exampleFormControlInput1" placeholder="baranggy">
             </div>
 
             <div class="form-group">
                 <label for="contact">Employee No. <span class="text-danger">*</span></label>
-                <input type="text" name="contact" value="<?= $user->contact?>" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number">
+                <input type="text" name="contact" value="<?= $user->contact?>" class="form-control" id="exampleFormControlInput1" placeholder="contact number">
             </div>
 
             <div>

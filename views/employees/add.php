@@ -18,17 +18,17 @@
 
             <div class="form-group">
                 <label for="lname">Last Name <span class="text-danger">*</span></label>
-                <input type="text" name="lname" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                <input type="text" name="lname" class="form-control" id="exampleFormControlInput1" placeholder="last name">
             </div>
 
             <div class="form-group">
                 <label for="fname">First Name <span class="text-danger">*</span></label>
-                <input type="text" name="fname" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                <input type="text" name="fname" class="form-control" id="exampleFormControlInput1" placeholder="first name">
             </div>
 
             <div class="form-group">
                 <label for="em_id">Employee No. <span class="text-danger">*</span></label>
-                <input type="text" name="em_id" class="form-control" id="exampleFormControlInput1" placeholder="ABC-0000-0001">
+                <input type="text" name="em_id" class="form-control" id="exampleFormControlInput1" placeholder="abc-0000-0001">
             </div>
 
             <div class="form-group">
@@ -43,32 +43,32 @@
 
             <div class="form-group">
                 <label for="email">Email <span class="text-danger">*</span></label>
-                <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+                <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="email address">
             </div>
 
             <div class="form-group">
                 <label for="office_code">Office No. <span class="text-danger">*</span></label>
-                <input type="text" name="office_code" class="form-control" id="exampleFormControlInput1" placeholder="0000-0000-ICP">
+                <input type="text" name="office_code" class="form-control" id="exampleFormControlInput1" placeholder="0000-0000-icp">
             </div>
 
             <div class="form-group">
                 <label for="province_or_city">Live <span class="text-danger">*</span></label>
-                <input type="text" name="province_or_city" class="form-control" id="exampleFormControlInput1" placeholder="Province or City">
+                <input type="text" name="province_or_city" class="form-control" id="exampleFormControlInput1" placeholder="province or city">
             </div>
 
             <div class="form-group">
                 <label for="region">Region <span class="text-danger">*</span></label>
-                <input type="text" name="region" class="form-control" id="exampleFormControlInput1" placeholder="Region">
+                <input type="text" name="region" class="form-control" id="exampleFormControlInput1" placeholder="region">
             </div>
 
             <div class="form-group">
-                <label for="brgy">Barangy <span class="text-danger">*</span></label>
-                <input type="text" name="brgy" class="form-control" id="exampleFormControlInput1" placeholder="Barangy">
+                <label for="brgy">Baranggy <span class="text-danger">*</span></label>
+                <input type="text" name="brgy" class="form-control" id="exampleFormControlInput1" placeholder="baranggy">
             </div>
 
             <div class="form-group">
                 <label for="contact">Contact No. <span class="text-danger">*</span></label>
-                <input type="text" name="contact" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number">
+                <input type="text" name="contact" class="form-control" id="exampleFormControlInput1" placeholder="contact number">
             </div>
 
             <div>
