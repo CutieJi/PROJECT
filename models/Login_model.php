@@ -1,6 +1,6 @@
 <?php
 
-class Grant_access_model extends CI_Model
+class Login_model extends CI_Model
 {
     public function __construct()
     {
@@ -8,21 +8,20 @@ class Grant_access_model extends CI_Model
         $this->table = 'users';
     }
 
-    public function signin($data)
+    public function login($where)
     {
-        $this->db->insert($this->table, $data);
-        return true;
-    }
-
-    public function row($data)
-    {
-        $where = array(
-            'is_deleted' => 0,
-            'users_id'   => $users_id,
-            'pword'      => $password
-        );
-
         $query = $this->db->get_where($this->table, $where);
         return $query->row();
+    }
+
+    public function update($id, $data)
+    {
+     /*   $where = array(
+            'is_deleted' => 0,
+            'id' => $id
+        );
+
+        $query = $this->db->update($this->table, $data, $where);
+        return true; */
     }
 }
