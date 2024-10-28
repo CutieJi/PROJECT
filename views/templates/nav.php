@@ -20,7 +20,7 @@
                             <a class="nav-link" href="<?= site_url('Grant_access') ?>">Grant Access</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= site_url('Grant_access') ?>">Employee</a>
+                            <a class="nav-link" href="<?= site_url('Employees') ?>">Employee</a>
                         </li>
                     </ul>
                 </div>

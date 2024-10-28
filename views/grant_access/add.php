@@ -3,7 +3,7 @@
          
 
          <div style="margin: 20px;">
-            <h3>Grant a Access to an Employee</h3>
+            <h3>Grant a access to Users</h3>
          </div>
 
 <div class="container px-0 px-lg-5">
@@ -17,7 +17,7 @@
             
 
             <div class="form-group">
-                <label for="users_id">Employee No. <span class="text-danger">*</span></label>
+                <label for="users_id">Users ID<span class="text-danger">*</span></label>
                 <input type="text" name="users_id" class="form-control" id="exampleFormControlInput1" placeholder="ABC-0000-0000">
             </div>
 

@@ -20,7 +20,7 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Employee No.</th>
+                        <th>Users ID</th>
                         <th>Department</th>
                         <th>Option</th>
                     </tr>
